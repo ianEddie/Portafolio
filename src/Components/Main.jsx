@@ -1,15 +1,19 @@
+//
+import { Home } from './Home'
 import { About } from './About'
-import { Description } from './Description'
 import { Projects } from './Projects'
 import { Skills } from './Skills'
+import { Contact } from './Contact'
 //
 export function Main () {
   return (
-    <main className='snap-y snap-mandatory w-full h-[95%] relative overflow-auto scrollbar-none '>
+    <main className='snap-y snap-mandatory w-full h-screen overflow-auto scrollbar-thin scroll-smooth '>
+      <Home />
       <About />
-      <Description />
       <Skills />
       <Projects />
+      <Contact />
     </main>
+
   )
 }
