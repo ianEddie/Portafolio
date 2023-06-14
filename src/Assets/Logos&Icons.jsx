@@ -1,17 +1,9 @@
-//
-import { htmlIcon, cssIcon, jsIcon, reactIcon, tailwindIcon, bootstrapIcon, sassIcon, firebaseIcon, figmaIcon, illustratorIcon, viteLogo, gitLogo, githubLogo, ianLogo, webIcon, arrowIcon, linkedinIcon, whatsappIcon, gmailIcon, framerIcon } from './icons.js'
+///
+import { htmlIcon, cssIcon, jsIcon, reactIcon, tailwindIcon, bootstrapIcon, sassIcon, firebaseIcon, figmaIcon, illustratorIcon, viteLogo, gitLogo, githubLogo, webIcon, arrowIcon, linkedinIcon, whatsappIcon, gmailIcon, framerIcon, closeIcon, menuIcon } from './icons.js'
 import { motion } from 'framer-motion'
 import { githubButtonAnimation, iconsContactAnimation, projectSectionIconsAnimation } from '../Animations/animations.js'
 import { useHover } from '../Hooks/useHover.js'
-//
-export function IanLogo () {
-  return (
-    <a href='#home'>
-      <img src={ianLogo} alt='icon' className='h-10' />
-    </a>
-  )
-}
-//
+///
 export function HtmlIcon () {
   const { hover, handleMouseEnter, handleMouseLeave } = useHover()
   return (
@@ -190,5 +182,17 @@ export function GithubLogoText () {
         <p className='font-primary text-sm'>Github</p>
       </motion.div>
     </div>
+  )
+}
+//
+export function MenuIcon () {
+  return (
+    <button><img src={menuIcon} alt='icon' className='h-6' /></button>
+  )
+}
+//
+export function CloseIcon () {
+  return (
+    <button><img src={closeIcon} alt='icon' /></button>
   )
 }
