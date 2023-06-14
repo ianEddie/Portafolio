@@ -193,6 +193,6 @@ export function MenuIcon () {
 //
 export function CloseIcon () {
   return (
-    <button><img src={closeIcon} alt='icon' /></button>
+    <button><img src={closeIcon} alt='icon' className='h-6' /></button>
   )
 }

@@ -31,4 +31,8 @@
     .header-li {
         @apply hover:bg-white/60 py-1 px-2 rounded-3xl hover:border hover:border-black
     }
+
+    .close {
+        @apply bg-orange-500
+    }
 }
