@@ -5,7 +5,7 @@
 
 @layer {
     form {
-        @apply flex flex-col py-10 w-1/4 items-center justify-center gap-y-10 rounded-3xl bg-white/30
+        @apply flex flex-col py-10 sm:w-1/4 items-center justify-center gap-y-10 rounded-3xl bg-white/30
     }
 
     label {
@@ -28,11 +28,11 @@
         @apply flex justify-center gap-x-3
     }
 
-    .header-li {
-        @apply hover:bg-white/60 py-1 px-2 rounded-3xl hover:border hover:border-black
+    li {
+        @apply hover:bg-white/70 py-1 px-2 rounded-3xl hover:border hover:border-black
     }
 
-    .close {
-        @apply bg-orange-500
+    .skill-logo {
+        @apply sm:h-1
     }
 }

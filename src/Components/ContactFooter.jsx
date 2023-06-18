@@ -1,5 +1,5 @@
 //
-import { GmailIcon, LinkedinIcon, WhatsappIcon } from '../Assets/Logos&Icons'
+import { GmailIcon, LinkedinIcon, WhatsappIcon } from './Icons/ContactIcons'
 //
 export function ContactFooter () {
   return (

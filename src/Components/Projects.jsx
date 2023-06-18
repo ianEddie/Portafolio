@@ -1,22 +1,22 @@
 
 import { Card } from './Card.jsx'
-import { data } from '../Utils/data.js'
+import { projectsData } from '../Utils/projectsData.js'
 import { GoToTopButton } from './GoToTopButton.jsx'
 import { CharacterOne } from '../Assets/CharacterOne.jsx'
-import { GithubLogoText } from '../Assets/Logos&Icons.jsx'
+import { GithubLogoText } from './Icons/ProjectsIcons.jsx'
 export function Projects () {
   return (
     <section className='flex h-screen snap-center relative' id='projects'>
-      <section className=' w-2/3 grid grid-rows-3'>
-        <h1 className='font-primary text-[2em] flex justify-center items-center'>Proyectos</h1>
-        <div className='flex flex-wrap justify-center gap-5 w-full'>
+      <section className='sm:w-2/3 w-full sm:flex sm:flex-col sm:justify-center sm:gap-y-20 flex flex-wrap justify-center gap-y-5 pt-10'>
+        <h1 className='font-primary text-[2em] sm:flex flex justify-center sm:items-center items-end'>Proyectos</h1>
+        <div className='flex flex-wrap justify-center sm:gap-5 gap-3  w-full'>
           {
-          data.map(info => <Card key={info.id} {...info} />)
+          projectsData.map(info => <Card key={info.id} {...info} />)
         }
         </div>
         <GithubLogoText />
       </section>
-      <section className='flex items-center justify-center'>
+      <section className='sm:flex sm:items-center sm:justify-center sm:visible hidden'>
         <CharacterOne />
       </section>
       <GoToTopButton />

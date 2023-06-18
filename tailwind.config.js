@@ -24,7 +24,7 @@ export default {
         custom: '0.7'
       },
       backgroundImage: {
-        hero: "url('https://i.postimg.cc/tJmZ2S7L/bg.png')"
+        primaryImage: "url('https://i.postimg.cc/tJmZ2S7L/bg.png')"
       },
       fontFamily: {
         primary: ' Bruno Ace, cursive',

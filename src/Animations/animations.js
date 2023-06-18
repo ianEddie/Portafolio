@@ -1,10 +1,11 @@
+
 export const titleHomeAnimation = {
   initial: { scale: 0 },
   animate: { scale: 1 },
   transition: {
     type: 'spring',
-    stiffness: 60,
-    damping: 5
+    delay: 0.3
+
   }
 }
 //
@@ -30,7 +31,7 @@ export const iconsContactAnimation = {
   }
 }
 //
-export const headerAnimation = {
+export const contactButtonAnimation = {
   whileTap: {
     scale: 1.1
   }

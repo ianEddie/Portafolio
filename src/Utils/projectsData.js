@@ -1,4 +1,4 @@
-export const data = [
+export const projectsData = [
   {
     id: 1,
     title: 'Mona Jimenez',
@@ -13,6 +13,12 @@ export const data = [
   },
   {
     id: 3,
+    title: 'E-commerce',
+    description: 'asdhaj',
+    image: 'https://i.postimg.cc/c40v00k7/cart.png'
+  },
+  {
+    id: 4,
     title: 'E-commerce',
     description: 'asdhaj',
     image: 'https://i.postimg.cc/c40v00k7/cart.png'

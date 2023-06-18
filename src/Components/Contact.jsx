@@ -4,7 +4,7 @@ import emailjs from '@emailjs/browser'
 import { GoToTopButton } from './GoToTopButton'
 import { ContactFooter } from './ContactFooter'
 import { motion } from 'framer-motion'
-import { headerAnimation } from '../Animations/animations'
+import { contactButtonAnimation } from '../Animations/animations'
 //
 export function Contact () {
   const form = useRef()
@@ -46,7 +46,7 @@ export function Contact () {
         </div>
         <div>
           <motion.input
-            {...headerAnimation}
+            {...contactButtonAnimation}
             type='submit' value='Enviar'
             className='w-20 rounded-xl font-primary text-sm border border-black bg-white/70 cursor-pointer hover:shadow-lg hover:shadow-black/20 hover:bg-white'
           />

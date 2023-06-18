@@ -1,12 +1,12 @@
 //
 import { projectSectionIconsAnimation } from '../Animations/animations'
-import { WebIcon } from '../Assets/Logos&Icons'
+import { WebIcon } from './Icons/ProjectsIcons'
 import { githubLogo } from '../Assets/icons'
 import { motion } from 'framer-motion'
 //
 export function Card ({ title, image }) {
   return (
-    <section className='w-[12rem] h-[12rem] flex flex-col items-center gap-y-3  border border-black rounded-[1.7em] '>
+    <section className='sm:w-[11rem] sm:h-[11rem] w-[11rem] flex flex-col items-center gap-y-3 py-3  border border-black rounded-[1.7em] '>
       <div className='h-1/2 grid place-content-center'>
         <img src={image} alt='image' />
       </div>

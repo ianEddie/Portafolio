@@ -7,7 +7,7 @@ import { Contact } from './Contact'
 //
 export function Main () {
   return (
-    <main className='snap-y snap-mandatory w-full h-screen overflow-auto scrollbar scrollbar-track-primary scrollbar-thumb-black/20 scrollbar-thumb-rounded-3xl scrollbar-w-2 scroll-smooth '>
+    <main className='snap-y snap-mandatory w-full h-screen overflow-auto scrollbar scrollbar-track-primary scrollbar-thumb-black/20 scrollbar-thumb-rounded-3xl scrollbar-w-2 scroll-smooth'>
       <Home />
       <Info />
       <Skills />
