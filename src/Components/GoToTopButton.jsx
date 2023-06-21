@@ -4,7 +4,7 @@ import { goToTopButtonAnimation } from '../Animations/animations'
 //
 export function GoToTopButton () {
   return (
-    <div className='absolute bottom-5 right-5 '>
+    <div className='absolute sm:bottom-5 sm:right-5 bottom-20 right-5'>
       <a href='#home'>
         <motion.button {...goToTopButtonAnimation}><ArrowIcon /></motion.button>
       </a>

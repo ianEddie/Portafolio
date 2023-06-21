@@ -16,12 +16,12 @@ export const menuData = [
   },
   {
     id: 3,
-    name: 'Projects',
+    name: 'Proyectos',
     route: '#projects'
   },
   {
     id: 4,
-    name: 'Contact',
+    name: 'Contacto',
     route: '#contact'
   }
 ]
