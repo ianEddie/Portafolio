@@ -2,9 +2,9 @@
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import { GoToTopButton } from './GoToTopButton'
-import { ContactFooter } from './ContactFooter'
 import { motion } from 'framer-motion'
-import { contactButtonAnimation } from '../Animations/animations'
+import { whileHoverScale } from '../Animations/animations'
+import { Footer } from './Footer'
 //
 export function Contact () {
   const form = useRef()
@@ -46,13 +46,13 @@ export function Contact () {
         </div>
         <div>
           <motion.input
-            {...contactButtonAnimation}
+            {...whileHoverScale}
             type='submit' value='Enviar'
             className='w-20 rounded-xl font-primary text-sm border border-black bg-white/70 cursor-pointer hover:shadow-lg hover:shadow-black/20 hover:bg-white'
           />
         </div>
       </form>
-      <ContactFooter />
+      <Footer />
       <GoToTopButton />
     </section>
   )

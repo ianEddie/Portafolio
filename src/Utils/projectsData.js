@@ -1,24 +1,23 @@
 export const projectsData = [
   {
-    id: 1,
-    title: 'Mona Jimenez',
+    id: 0,
+    title: 'Tickets',
     description: 'asdhaj',
-    image: 'https://i.postimg.cc/FRpzWC7N/ticket.png'
+    image: 'https://i.postimg.cc/FRpzWC7N/ticket.png',
+    siteUrl: 'https://ticketshow.netlify.app/',
+    githubUrl: 'https://github.com/ianEddie/Html-Css-Proyecto-final.git'
+  },
+  {
+    id: 1,
+    title: 'Clima',
+    description: 'asdhaj',
+    image: 'https://i.postimg.cc/KvHMX52x/rain.png',
+    siteUrl: 'https://ianweatherapp.netlify.app/',
+    githubUrl: 'https://github.com/ianEddie/Weather.git'
+
   },
   {
     id: 2,
-    title: 'Clima',
-    description: 'asdhaj',
-    image: 'https://i.postimg.cc/KvHMX52x/rain.png'
-  },
-  {
-    id: 3,
-    title: 'E-commerce',
-    description: 'asdhaj',
-    image: 'https://i.postimg.cc/c40v00k7/cart.png'
-  },
-  {
-    id: 4,
     title: 'E-commerce',
     description: 'asdhaj',
     image: 'https://i.postimg.cc/c40v00k7/cart.png'

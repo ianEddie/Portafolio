@@ -1,32 +1,27 @@
-import { HtmlIcon, BootstrapIcon, CssIcon, FigmaIcon, FirebaseIcon, FramerMotionIcon, GitIcon, GithubIcon, IllustratorIcon, JsIcon, ReactIcon, SassIcon, TailwindIcon, ViteIcon } from './Icons/SkillsIcons'
+//
 import { GoToTopButton } from './GoToTopButton.jsx'
+import { desingIcons, devIcons, toolsIcons } from '../Utils/iconsData'
+import { SkillsIcons } from './Icons/SkillsIcons.jsx'
 //
 export function Skills () {
   return (
-    <section className='h-screen w-full snap-center relative' id='skills'>
-      <h1 className='font-primary text-[2em] sm:h-[20%] h-1/3 w-full flex justify-center sm:items-end items-center'>Skills</h1>
-      <div className='w-full sm:h-[80%] h-2/3 flex flex-col items-center sm:justify-start sm:justify-center justify-start sm:py-16 gap-y-8'>
-        <div className='flex justify-center items-center sm:gap-x-5 gap-x-3 px-5'>
-          <HtmlIcon />
-          <CssIcon />
-          <JsIcon />
-          <ReactIcon />
+    <section className='h-screen w-full snap-center relative font-primary grid place-items-center content-center gap-y-16' id='skills'>
+      <h1 className='text-[2em]'>Skills</h1>
+      <div className='sm:text-[0.8em] text-[0.7em] sm:w-1/2 sm:px-0 px-3  flex flex-col justify-center items-center gap-y-10'>
+        <div className='flex gap-x-5'>
+          {
+      devIcons.map(item => <SkillsIcons key={item.id} {...item} />)
+     }
         </div>
-
-        <div className='flex flex-wrap justify-center items-center sm:gap-x-5 gap-x-1'>
-          <TailwindIcon />
-          <BootstrapIcon />
-          <SassIcon />
-          <FigmaIcon />
-          <IllustratorIcon />
-          <FramerMotionIcon />
+        <div className='flex sm:gap-x-5 gap-x-3'>
+          {
+      desingIcons.map(item => <SkillsIcons key={item.id} {...item} />)
+     }
         </div>
-
-        <div className='flex sm:justify-center justify-between sm:gap-x-5 gap-x-3 px-10 items-center'>
-          <ViteIcon />
-          <FirebaseIcon />
-          <GitIcon />
-          <GithubIcon />
+        <div className='flex gap-x-5'>
+          {
+      toolsIcons.map(item => <SkillsIcons key={item.id} {...item} />)
+     }
         </div>
       </div>
       <GoToTopButton />

@@ -17,28 +17,16 @@ export const goToTopButtonAnimation = {
   }
 }
 //
-export const githubButtonAnimation = {
+export const whileHoverTop = {
   whileHover: {
     y: -7,
     transition: { type: 'spring', stiffness: 100, damping: 10 }
   }
 }
+
 //
-export const iconsContactAnimation = {
+export const whileHoverScale = {
   whileHover: {
-    rotate: 360,
-    transition: { duration: 1 }
-  }
-}
-//
-export const contactButtonAnimation = {
-  whileTap: {
     scale: 1.1
-  }
-}
-//
-export const projectSectionIconsAnimation = {
-  whileHover: {
-    scale: 1.2
   }
 }
