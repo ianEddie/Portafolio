@@ -1,6 +1,5 @@
-///
-import { ianLogo } from '../Assets/icons'
-///
+import { ianLogo } from '../Utils/GeneralIconsData'
+//
 export function Logo () {
   return (
     <nav className='absolute sm:top-3 sm:left-5 z-40 top-2'>

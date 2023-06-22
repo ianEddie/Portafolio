@@ -2,8 +2,9 @@
 import { Card } from './Card.jsx'
 import { projectsData } from '../Utils/projectsData.js'
 import { GoToTopButton } from './GoToTopButton.jsx'
-import { CharacterOne } from '../Assets/CharacterOne.jsx'
 import { GithubLogoText } from './Icons/ProjectsIcons.jsx'
+import { CharacterOne } from './Icons/CharacterOne.jsx'
+//
 export function Projects () {
   return (
     <section className='flex h-screen snap-center relative' id='projects'>

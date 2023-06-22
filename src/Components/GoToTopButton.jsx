@@ -1,6 +1,6 @@
-import { ArrowIcon } from '../Assets/Logos&Icons'
 import { motion } from 'framer-motion'
 import { goToTopButtonAnimation } from '../Animations/animations'
+import { ArrowIcon } from './Icons/GeneralIcons'
 //
 export function GoToTopButton () {
   return (

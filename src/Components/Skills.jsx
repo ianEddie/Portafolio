@@ -1,6 +1,5 @@
-//
 import { GoToTopButton } from './GoToTopButton.jsx'
-import { desingIcons, devIcons, toolsIcons } from '../Utils/iconsData'
+import { desingIcons, devIcons, toolsIcons } from '../Utils/skillsIconsData.js'
 import { SkillsIcons } from './Icons/SkillsIcons.jsx'
 //
 export function Skills () {

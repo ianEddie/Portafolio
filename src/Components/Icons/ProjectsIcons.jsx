@@ -1,6 +1,6 @@
 //
 import { motion } from 'framer-motion'
-import { githubLogo, webIcon } from '../../Assets/icons'
+import { githubLogo, webIcon } from '../../Utils/GeneralIconsData'
 import { whileHoverScale, whileHoverTop } from '../../Animations/animations'
 //
 export function WebIcon () {

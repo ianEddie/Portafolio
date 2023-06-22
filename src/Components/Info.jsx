@@ -1,5 +1,5 @@
-import { CharacterOne } from '../Assets/CharacterOne.jsx'
 import { GoToTopButton } from './GoToTopButton.jsx'
+import { CharacterOne } from './Icons/CharacterOne.jsx'
 //
 export function Info () {
   return (

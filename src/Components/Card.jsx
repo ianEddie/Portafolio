@@ -1,7 +1,6 @@
-//
 import { whileHoverScale } from '../Animations/animations'
 import { WebIcon } from './Icons/ProjectsIcons'
-import { githubLogo } from '../Assets/icons'
+import { githubLogo } from '../Utils/GeneralIconsData'
 import { motion } from 'framer-motion'
 //
 export function Card ({ title, image, githubUrl, siteUrl }) {

@@ -81,21 +81,3 @@ export const toolsIcons = [
     img: 'https://i.postimg.cc/XqWCVvQr/github.png'
   }
 ]
-
-export const footerIcons = [
-  {
-    id: 0,
-    name: 'Linkedin',
-    img: 'https://i.postimg.cc/P570MGr8/linkedin.png'
-  },
-  {
-    id: 1,
-    name: 'WhatsApp',
-    img: 'https://i.postimg.cc/V6QT3jtf/whatsapp.png'
-  },
-  {
-    id: 2,
-    name: 'Gmail',
-    img: 'https://i.postimg.cc/R0nysPNp/gmail.png'
-  }
-]

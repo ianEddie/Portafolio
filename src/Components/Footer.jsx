@@ -1,6 +1,6 @@
 //
 import { whileHoverTop } from '../Animations/animations'
-import { footerIcons } from '../Utils/iconsData'
+import { footerIcons } from '../Utils/footerIconsData'
 import { motion } from 'framer-motion'
 //
 export function Footer () {
@@ -8,7 +8,9 @@ export function Footer () {
     <footer>
       {
   footerIcons.map(item => (
-    <motion.img src={item.img} alt={item.name} key={item.id} className='h-7 cursor-pointer' {...whileHoverTop} />
+    <a href={item.url} key={item.id} target='blank'>
+      <motion.img src={item.img} alt={item.name} className='h-7 cursor-pointer' {...whileHoverTop} />
+    </a>
   ))
       }
     </footer>

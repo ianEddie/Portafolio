@@ -1,15 +1,12 @@
 //
-import { arrowIcon, closeIcon, menuIcon } from './icons.js'
-
+import { arrowIcon, closeIcon, menuIcon } from '../../Utils/GeneralIconsData'
 //
 
-//
 export function ArrowIcon () {
   return (
     <img src={arrowIcon} alt='icon' className='cursor-pointer h-6' />
   )
 }
-
 //
 export function MenuIcon () {
   return (
