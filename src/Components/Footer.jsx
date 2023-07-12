@@ -1,11 +1,10 @@
-//
 import { whileHoverTop } from '../Animations/animations'
 import { footerIcons } from '../Utils/footerIconsData'
 import { motion } from 'framer-motion'
 //
 export function Footer () {
   return (
-    <footer>
+    <div className='flex mt-10 gap-x-3'>
       {
   footerIcons.map(item => (
     <a href={item.url} key={item.id} target='blank'>
@@ -13,6 +12,6 @@ export function Footer () {
     </a>
   ))
       }
-    </footer>
+    </div>
   )
 }

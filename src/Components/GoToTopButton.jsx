@@ -1,13 +1,11 @@
 import { motion } from 'framer-motion'
 import { goToTopButtonAnimation } from '../Animations/animations'
-import { ArrowIcon } from './Icons/GeneralIcons'
+import { arrowIcon } from '../Utils/GeneralIconsData'
 //
 export function GoToTopButton () {
   return (
-    <div className='absolute sm:bottom-5 sm:right-5 bottom-20 right-5'>
-      <a href='#home'>
-        <motion.button {...goToTopButtonAnimation}><ArrowIcon /></motion.button>
-      </a>
-    </div>
+    <a href='#home'>
+      <motion.img src={arrowIcon} alt='icon' className='h-6 absolute bottom-5 right-5 cursor-pointer' {...goToTopButtonAnimation} />
+    </a>
   )
 }

@@ -1,22 +1,9 @@
+import { menuIcon, closeIcon } from '../Utils/GeneralIconsData'
 //
-import { useState } from 'react'
-import { ToggleIcons } from './ToggleIcons'
-import { menuData } from '../Utils/menuData'
-//
-export function ToggleMenu () {
-  const [isActive, setIsActive] = useState(false)
+export function ToggleMenu ({ toggle, handleToggle }) {
   return (
-    <nav className='sm:hidden relative '>
-      <ToggleIcons isActive={isActive} onClick={() => setIsActive(!isActive)} />
-      {isActive && (
-        <ul className='bg-main absolute z-40 flex h-screen flex-col justify-center items-center gap-y-8 w-full font-primary'>
-          {menuData.map((element) => (
-            <li key={element.id} onClick={() => setIsActive(false)}>
-              <a href={element.route}>{element.name}</a>
-            </li>
-          ))}
-        </ul>
-      )}
-    </nav>
+    <div className='absolute top-[13px] right-10 z-10 cursor-pointer'>
+      <img src={toggle ? closeIcon : menuIcon} alt='icon' onClick={handleToggle} className='h-5' />
+    </div>
   )
 }

@@ -6,22 +6,8 @@ export default {
   ],
   theme: {
     extend: {
-      borderRadius: {
-        custom: '2em'
-      },
-      gridRowEnd: {
-        9: '9',
-        10: '10',
-        12: '12'
-      },
-      gridRow: {
-        'span-11': 'span 11 / span 11'
-      },
       colors: {
         main: '#f8f1d7'
-      },
-      backdropBrightness: {
-        custom: '0.7'
       },
       backgroundImage: {
         primaryImage: "url('https://i.postimg.cc/tJmZ2S7L/bg.png')"

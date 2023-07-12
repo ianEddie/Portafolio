@@ -1,4 +1,3 @@
-//
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import { GoToTopButton } from './GoToTopButton'
@@ -24,8 +23,8 @@ export function Contact () {
   }
   console.log(sendEmail.length)
   return (
-    <section className='h-screen snap-start relative flex flex-col items-center justify-center sm:pt-16 gap-y-5' id='contact'>
-      <form ref={form} onSubmit={sendEmail} className='border border-black shadow-lg shadow-stone-500'>
+    <section className='w-full h-screen snap-center relative flex flex-col items-center justify-center' id='contact'>
+      <form ref={form} onSubmit={sendEmail} className='border border-black shadow-lg shadow-stone-500 '>
         <div>
           <label>Nombre</label>
           <motion.input

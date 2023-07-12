@@ -4,9 +4,9 @@ import { SkillsIcons } from './Icons/SkillsIcons.jsx'
 //
 export function Skills () {
   return (
-    <section className='h-screen w-full snap-center relative font-primary grid place-items-center content-center gap-y-16' id='skills'>
-      <h1 className='text-[2em]'>Skills</h1>
-      <div className='sm:text-[0.8em] text-[0.7em] sm:w-1/2 sm:px-0 px-3  flex flex-col justify-center items-center gap-y-10'>
+    <section className='h-screen w-full snap-center relative font-primary flex flex-col justify-center gap-y-10' id='skills'>
+      <h1 className='text-[2em] self-center place-self-center'>Skills</h1>
+      <div className='sm:text-[0.8em] text-[0.7em] flex flex-col gap-y-10 items-center'>
         <div className='flex gap-x-5'>
           {
       devIcons.map(item => <SkillsIcons key={item.id} {...item} />)
